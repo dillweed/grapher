@@ -1,4 +1,4 @@
-# Generate a 2d graph object for displaying (x,y) data
+# Generate a 2d graph object for displaying (x,y) data as text
 
 ## Args
 
