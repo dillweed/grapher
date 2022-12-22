@@ -1,6 +1,6 @@
 # Generate a 2d graph object for displaying (x,y) data as text
 
-## | Args
+## | Args |
 ```
 1. height (int): Number of vertical positions
 1. width (int): Number of horizontal positions
@@ -9,8 +9,8 @@
 1. fill (str): Optional. Character to fill each position in grid. Default is "." 
 ```
 
-## | Functions
-### - Generate
+## | Functions |
+### - Generate - 
 ```
 generate(self)
 ```
@@ -20,7 +20,7 @@ Returns:
 ```
 list[list[str]]: List of rows of positions
 ```
-### - Set
+### - Set - 
 ```
 set(self, _x, _y, item)
 ```
@@ -35,7 +35,7 @@ _y (int): y coordinate to set
 item (str or int): Value, usually str or int, to set at position
 ```
 
-### - Get
+### - Get - 
 ```
 get(self, _x, _y)
 ```
@@ -53,7 +53,7 @@ Returns:
 str or int: Value of object from specified position
 ```
 
-### - Transpose
+### - Transpose - 
 ```
 transpose(self, _x, _y)
 ```
@@ -76,7 +76,7 @@ Returns:
 tuple: (i,j) Position reference for use in a subscriptable nested loop. 
 ```
 
-### - Display
+### - Display - 
 ```
 display(self)
 ```
