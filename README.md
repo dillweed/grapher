@@ -21,11 +21,13 @@ Set value at a specified position to item, usually str or int.
 
 Args:
 
-```_x (int): x coordinate to set```
+```
+_x (int): x coordinate to set
 
-```_y``` (int): y coordinate to set
+_y (int): y coordinate to set
 
-```item``` (str or int): Value, usually str or int, to set at position
+item (str or int): Value, usually str or int, to set at position
+```
 
 ### ```get(self, _x, _y)```
 Get value at position.
