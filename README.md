@@ -4,13 +4,13 @@
 ```
 1. height (int): Number of vertical positions
 1. width (int): Number of horizontal positions
-1. init_x (int): 0 reference offset from left edge 
-1. init_y (int): 0 reference offset from bottom edge
-1. fill (str): Character to fill each position in grid. Default is "." 
+1. init_x (int): Optional. 0 reference offset from left edge 
+1. init_y (int): Optional. 0 reference offset from bottom edge
+1. fill (str): Optional. Character to fill each position in grid. Default is "." 
 ```
 
-## Functions
-### generate
+## * Functions
+### 1. Generate
 ```
 generate(self)
 ```
@@ -20,7 +20,7 @@ Returns:
 ```
 list[list[str]]: List of rows of positions
 ```
-### set
+### 1. Set
 ```
 set(self, _x, _y, item)
 ```
