@@ -10,16 +10,16 @@
 ```
 
 ## | Functions |
-### - Generate - 
-```
-generate(self)
-```
-Generate a graph sized from init arguments.
-
-Returns:
-```
-list[list[str]]: List of rows of positions
-```
+### Generate
+>```
+>generate(self)
+>```
+>Generate a graph sized from init arguments.
+>
+>Returns:
+>```
+>list[list[str]]: List of rows of positions
+>```
 ### - Set - 
 ```
 set(self, _x, _y, item)
