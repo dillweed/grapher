@@ -21,7 +21,7 @@ Set value at a specified position to item, usually str or int.
 
 Args:
 
-```_x``` (int): x coordinate to set
+```_x (int): x coordinate to set```
 
 ```_y``` (int): y coordinate to set
 
