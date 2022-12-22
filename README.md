@@ -1,6 +1,6 @@
 # Generate a 2d graph object for displaying (x,y) data as text
 
-## | Args |
+## **_Args_**
 ```
 1. height (int): Number of vertical positions
 1. width (int): Number of horizontal positions
@@ -9,7 +9,7 @@
 1. fill (str): Optional. Character to fill each position in grid. Default is "." 
 ```
 
-## | Functions |
+## **_Functions_**
 
 ### Generate
 >```
