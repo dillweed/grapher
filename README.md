@@ -1,4 +1,4 @@
-# Generate a 2d graph object for displaying (x,y) data as text
+# Generate a 2d text graph for displaying (x,y) data with ascii
 
 ## Args
 ```
