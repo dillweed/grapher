@@ -2,11 +2,11 @@
 
 ## Args
 ```
-1. height (int): Number of vertical positions
-1. width (int): Number of horizontal positions
-1. init_x (int): Optional. 0 reference offset from left edge 
-1. init_y (int): Optional. 0 reference offset from bottom edge
-1. fill (str): Optional. Character to fill each position in grid. Default is "." 
+height (int): Number of vertical positions
+width (int): Number of horizontal positions
+init_x (int): Optional. 0 reference offset from left edge 
+init_y (int): Optional. 0 reference offset from bottom edge
+fill (str): Optional. Character to fill each position in grid. Default is "." 
 ```
 
 ## Functions
