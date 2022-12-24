@@ -11,7 +11,7 @@ class Grapher:
         height (int): Number of vertical positions.
         init_x (int): Optional. 0 reference offset from left edge.
         init_y (int): Optional. 0 reference offset from bottom edge.
-        fill (str): Optional. Character to fill each position in grid. Default is ".".
+        fill (str): Optional. Value to fill each position in grid. Default is ".".
     """
 
     def __init__(self, width=10, height=10, init_x=0, init_y=0, fill="."):
