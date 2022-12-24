@@ -29,9 +29,6 @@ Once you have created a Grapher object, you can use the following methods to man
 Here's an example of how to use these methods:
 
 ```
-# Import the Grapher class
-from grapher import Grapher
-
 # Generate a graph object with optional offset
 graph = Grapher(5, 10, 5, 2)
 
