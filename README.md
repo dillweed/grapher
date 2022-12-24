@@ -13,9 +13,8 @@ from grapher import Grapher
 # Create a new Grapher object with the default parameters
 graph = Grapher()
 
-# Create a new Grapher object with a height of 20, width of 30, initial x offset of 5,
-# initial y offset of 10, and a fill character of "-"
-graph = Grapher(height=20, width=30, init_x=5, init_y=10, fill="-")
+# Create a new Grapher object with a height of 20, width of 30, and a fill character of space character.
+graph = Grapher(height=20, width=30, fill=" ")
 ```
 
 Once you have created a Grapher object, you can use the following methods to manipulate the graph:
