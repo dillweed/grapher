@@ -13,7 +13,7 @@ from grapher import Grapher
 # Create a new Grapher object with the default parameters
 graph = Grapher()
 
-# Create a new Grapher object with a height of 20, width of 30, and a fill character of space character.
+# Create a new Grapher object with a height of 20, width of 30, and a fill character of space " ".
 graph_spaces = Grapher(height=20, width=30, fill=" ")
 ```
 
