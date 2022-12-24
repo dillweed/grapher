@@ -30,10 +30,12 @@ Here's an example of how to use these methods:
 
 ```python
 # Generate a graph object with optional offset
-graph = Grapher(10, 5, 5, 2)
+width, height = 10, 5
+start_x, start_y = width // 2, height // 2
+graph = Grapher(width, height, start_x, start_y)
 
 # Create a coordinate variable with a representative character
-face = (0, -1, "X")
+face = (0, 0, "X")
 
 # Set the variable in the graph
 graph.set_value(*face)
@@ -42,7 +44,7 @@ graph.set_value(*face)
 print(graph.display())
 
 # Get a specific value from the graph
-print(graph.get_value(0, -1))
+print(graph.get_value(0, 0))
 
 ```
 
@@ -51,8 +53,8 @@ Output:
 ```
 ..........
 ..........
-..........
 .....X....
+..........
 ..........
 X
 ```
