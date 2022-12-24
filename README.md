@@ -14,7 +14,7 @@ from grapher import Grapher
 graph = Grapher()
 
 # Create a new Grapher object with a height of 20, width of 30, and a fill character of space character.
-graph = Grapher(height=20, width=30, fill=" ")
+graph_spaces = Grapher(height=20, width=30, fill=" ")
 ```
 
 Once you have created a Grapher object, you can use the following methods to manipulate the graph:
@@ -27,7 +27,7 @@ Once you have created a Grapher object, you can use the following methods to man
 
 Here's an example of how to use these methods:
 
-```
+```python
 # Generate a graph object with optional offset
 graph = Grapher(5, 10, 5, 2)
 
