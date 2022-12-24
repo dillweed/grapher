@@ -41,7 +41,7 @@ graph.set_value(*face)
 print(graph.display())
 
 # Get a specific value from the graph
-print(graph.get_value(face[0], face[1]))
+print(graph.get_value(0, -1))
 
 ```
 Output: 
