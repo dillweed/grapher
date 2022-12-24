@@ -1,6 +1,5 @@
 """Generate a 2d graph object for displaying (x,y) data as text"""
-# TODO fix _transpose algo. Use (max_value - (input_number - 1))
-# to invert the value instead of a reversed list comprehension.
+# TODO swap height, width argument positions to mirror x, y standard.
 # TODO catch init_x and init_y values that are out of range.
 
 
@@ -8,16 +7,16 @@ class Grapher:
     """Generate a 2d graph object for displaying (x,y) data as text.
 
     Args:
-        height (int): Number of vertical positions.
         width (int): Number of horizontal positions.
+        height (int): Number of vertical positions.
         init_x (int): Optional. 0 reference offset from left edge.
         init_y (int): Optional. 0 reference offset from bottom edge.
         fill (str): Optional. Character to fill each position in grid. Default is ".".
     """
 
-    def __init__(self, height=10, width=10, init_x=0, init_y=0, fill="."):
-        self.height = height
+    def __init__(self, width=10, height=10, init_x=0, init_y=0, fill="."):
         self.width = width
+        self.height = height
         self.init_x = init_x
         self.init_y = init_y
         self.fill = fill
@@ -50,7 +49,7 @@ class Grapher:
             y (int): Vertical coordinate to get.
 
         Returns:
-            str or int: Value of object from specified position.
+            str or int: Value of object at specified position.
         """
         i, j = self._transpose(x, y)
         return self.graph[i][j]
@@ -60,8 +59,8 @@ class Grapher:
         nested loop. (list of lists)
 
         X values increase to the right like nested j values do.
-        X values increase upwards which is opposite to i in general.
-        The x,y starting position is lower-left by default. i,j is upper-left.
+        Y values increase upwards which is opposite to i which places 0 on top.
+        The x,y starting position 0,0 is lower-left by default. i,j is upper-left.
 
         Args:
             x (int): Horizontal coordinate to convert.
@@ -70,14 +69,7 @@ class Grapher:
         Returns:
             tuple: (i,j) Position reference for use in a subscriptable nested loop.
         """
-        # Previous algo was inefficient. Used reversed list to invert y->i.
-
-        # return (
-        #     [n for n in range(self.height)][::-1][y + self.init_y],
-        #     x + self.init_x,
-        # )
-
-        # Current algo uses a cool math trick to invert a number within a range.
+        # Algo uses a cool math trick to invert a number within a range.
         # Without 0 indexing, (max number of range) - (number to invert - 1)
         # will invert a number within a range. Range (1 through 6) input 2 outputs 5.
         # With 0 indexing, use (max number of range - 1) - (number to invert).

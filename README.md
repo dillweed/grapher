@@ -2,10 +2,11 @@
 
 Grapher is a Python class that generates a 2D graph object for displaying (x, y) data as text.
 
-
 ## Usage
 
-To use Grapher, first import the class and create a new `Grapher` object. You can specify the height, width, initial x and y offsets, and the fill character for the graph:
+To use Grapher, first import the class and create a new `Grapher` object. You
+can specify the width, height, initial x and y offsets, and the fill character for the
+graph:
 
 ```python
 from grapher import Grapher
@@ -14,7 +15,7 @@ from grapher import Grapher
 graph = Grapher()
 
 # Create a new Grapher object with a height of 20, width of 30, and a fill character of space " ".
-graph_spaces = Grapher(height=20, width=30, fill=" ")
+graph_spaces = Grapher(width=30, height=20, fill=" ")
 ```
 
 Once you have created a Grapher object, you can use the following methods to manipulate the graph:
@@ -29,7 +30,7 @@ Here's an example of how to use these methods:
 
 ```python
 # Generate a graph object with optional offset
-graph = Grapher(5, 10, 5, 2)
+graph = Grapher(10, 5, 5, 2)
 
 # Create a coordinate variable with a representative character
 face = (0, -1, "X")
@@ -44,7 +45,9 @@ print(graph.display())
 print(graph.get_value(0, -1))
 
 ```
-Output: 
+
+Output:
+
 ```
 ..........
 ..........
