@@ -36,7 +36,7 @@ from grapher import Grapher
 graph = Grapher(5, 10, 5, 2)
 
 # Create a coordinate variable with a representative character
-face = (0, -1, X)
+face = (0, -1, "X")
 
 # Set the variable in the graph
 graph.set_value(*face)
