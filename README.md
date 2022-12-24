@@ -29,12 +29,31 @@ Once you have created a Grapher object, you can use the following methods to man
 Here's an example of how to use these methods:
 
 ```
-# Set the value at position (2, 3) to "X"
-graph.set_value(2, 3, "X")
+# Import the Grapher class
+from grapher import Grapher
 
-# Get the value at position (4, 5)
-value = graph.get_value(4, 5)
+# Generate a graph object with optional offset
+graph = Grapher(5, 10, 5, 2)
 
-# Display the graph
+# Create a coordinate variable with a representative character
+face = (0, -1, 🫥)
+
+# Set the variable in the graph
+graph.set_value(*face)
+
+# Print the graph
 print(graph.display())
+
+# Get a specific value from the graph
+print(graph.get_value(face[0], face[1]))
+
+```
+Output: 
+```
+..........
+..........
+..........
+.....🫥....
+..........
+🫥
 ```
