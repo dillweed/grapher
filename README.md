@@ -11,10 +11,10 @@ graph:
 ```python
 from grapher import Grapher
 
-# Create a new Grapher object with the default parameters
+# Create a Grapher object with the default parameters
 graph = Grapher()
 
-# Create a new Grapher object with a height of 20, width of 30, and a fill character of space " ".
+# Create a Grapher object with a width of 30, height of 20, and a fill character of space " ".
 graph_spaces = Grapher(width=30, height=20, fill=" ")
 ```
 
