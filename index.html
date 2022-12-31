@@ -1,17 +1,30 @@
-<html>
-    <head>
-      <link rel="stylesheet" href="https://pyscript.net/alpha/pyscript.css" />
-      <script defer src="https://pyscript.net/alpha/pyscript.js"></script>
-      <py-env>
-        - import Grapher
-      </py-env>
-    </head>
+<!DOCTYPE html>
+<html lang="en">
 
-  <body>
-    <h1>PyScript import test script</h1>
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+
+    <title>Grapher Test</title>
+
+    <link rel="stylesheet" href="https://pyscript.net/latest/pyscript.css" />
+    <script defer src="https://pyscript.net/latest/pyscript.js"></script>
+</head>
+
+<body>
+    <py-config>
+        [[fetch]]
+        files = ["grapher.py"]
+    </py-config>
     <py-script>
-graph = Grapher()
-graph.display()
+        from grapher import Grapher
+        width, height = 10, 5
+        start_x, start_y = width // 2, height // 2
+        graph = Grapher(width, height, start_x, start_y)
+        face = (0, 0, "X")
+        graph.set_value(*face)
+        print(graph.display())
     </py-script>
-  </body>
+</body>
+
 </html>
