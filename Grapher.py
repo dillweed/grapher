@@ -1,6 +1,9 @@
 """Generate a 2d graph object for displaying (x,y) data as text"""
-# TODO swap height, width argument positions to mirror x, y standard.
 # TODO catch init_x and init_y values that are out of range.
+# TODO make mermaid diagram for readme
+# TODO change display() to __repr__()
+# TODO find out if generate_graph() should be a separate function or built into
+# the __init__.
 
 
 class Grapher:
