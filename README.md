@@ -2,6 +2,15 @@
 
 Grapher is a Python class that generates a 2D graph object for displaying (x, y) data as text.
 
+```
+  ..........
+  ..........
+  ..........
+↑ ..........
+Y ..........
+  X →
+```
+
 ## Usage
 
 To use Grapher, first import the class and create a new `Grapher` object. You
@@ -35,10 +44,10 @@ start_x, start_y = width // 2, height // 2
 graph = Grapher(width, height, start_x, start_y)
 
 # Create a coordinate variable with a representative character
-face = (0, 0, "X")
+sprite = (0, 0, "X")
 
 # Set the variable in the graph
-graph.set_value(*face)
+graph.set_value(*sprite)
 
 # Print the graph
 print(graph.display())
