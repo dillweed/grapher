@@ -1,9 +1,7 @@
 """Generate a 2d graph object for displaying (x,y) data as text"""
 # TODO catch init_x and init_y values that are out of range.
-# TODO make mermaid diagram for readme
+# TODO add option for padding each cell to specified width for table-like data.
 # TODO change display() to __repr__()
-# TODO find out if generate_graph() should be a separate function or built into
-# the __init__.
 
 
 class Grapher:
@@ -92,3 +90,13 @@ class Grapher:
         graph_list = [[str(item) for item in line] for line in self.graph]
         # Return printable 2d str
         return "\n".join(["".join(line) for line in graph_list])
+
+    def get_max_len(self) -> int:
+        """Get max cell length.
+
+        Returns:
+            int: Number of characters in the longest cell.
+        """
+        max_len = max([max([len(str(item)) for item in line])
+                       for line in self.graph])
+        return max_len
